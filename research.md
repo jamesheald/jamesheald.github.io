@@ -5,4 +5,40 @@ title: This will be used as the title-tag of the page head
 hello
 =====
 
-**You are here!**
+## Home
+
+I am a fourth year PhD student in the [Computational and Biological Learning Lab](http://learning.eng.cam.ac.uk/Public/) at the University of Cambridge. My supervisor is [Daniel Wolpert](https://wolpertlab.neuroscience.columbia.edu/). Prior to starting my PhD, I worked as a medical doctor in the NHS. Before that, I studied an MSc in Cognitive and Computational Neuroscience at The University of Sheffield and an MBChB in Medicine at The University of Manchester.
+
+I am currently based at the [Zuckerman Mind Brain Behavior Institute](https://zuckermaninstitute.columbia.edu/) at Columbia University in the City of New York.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jamesheald/jamesheald.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
