@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Home
 
-You can use the [editor on GitHub](https://github.com/jamesheald/jamesheald.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I am a fourth year PhD student in the [Computational and Biological Learning Lab](http://learning.eng.cam.ac.uk/Public/) at the University of Cambridge. My supervisor is [Daniel Wolpert](https://wolpertlab.neuroscience.columbia.edu/). Prior to starting my PhD, I worked as a medical doctor in the NHS. Before that, I studied an MSc in Cognitive and Computational Neuroscience at The University of Sheffield and an MBChB in Medicine at The University of Manchester.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am currently based at the [Zuckerman Mind Brain Behavior Institute](https://zuckermaninstitute.columbia.edu/) at Columbia University in the City of New York.
 
 ### Markdown
 
