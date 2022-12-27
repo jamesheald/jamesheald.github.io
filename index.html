@@ -51,21 +51,21 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="hdrp_stop()" onmouseover="hdrp_start()">
+          <tr onmouseout="TICS_stop()" onmouseover="TICS_start()">
             <td style="padding:20px;width:25%;max-width:10%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='TICS_cover'><img src='images/TICS_cover.png'></div>
-                <img src='images/TICS_cover.png'>
+                <div class="two" id='TICS_cover'><img src='images/TICS_cover.jpg'></div>
+                <img src='images/TICS_cover.jpg'>
               </div>
               <script type="text/javascript">
-                function TICS_cover() {
+                function TICS_start() {
                   document.getElementById('TICS_cover').style.opacity = "1";
                 }
 
-                function TICS_cover() {
+                function TICS_stop() {
                   document.getElementById('TICS_cover').style.opacity = "0";
                 }
-                hdrp_stop()
+                TICS_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -84,21 +84,21 @@
             </td>
           </tr>
 
-          <tr onmouseout="bs_stop()" onmouseover="bs_start()" bgcolor="#ffffd0">
+          <tr onmouseout="COIN_stop()" onmouseover="COIN_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='bs_image'><img src='images/BS_after.jpg'></div>
-                <img src='images/BS_before.jpg'>
+                <div class="two" id='COIN'><img src='images/COIN.png'></div>
+                <img src='images/COIN.png'>
               </div>
               <script type="text/javascript">
-                function bs_start() {
-                  document.getElementById('bs_image').style.opacity = "1";
+                function COIN_start() {
+                  document.getElementById('COIN').style.opacity = "1";
                 }
 
-                function bs_stop() {
-                  document.getElementById('bs_image').style.opacity = "0";
+                function COIN_stop() {
+                  document.getElementById('COIN').style.opacity = "0";
                 }
-                bs_stop()
+                COIN_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
