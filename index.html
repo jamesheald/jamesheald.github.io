@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>
+<!-- python3 -m http.server 8080 & sleep 1 && open http://localhost:8080/index.html -->
+ <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>James Heald</title>
@@ -151,6 +152,46 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <!-- <tr style="padding:0px"> -->
+          <tr style="padding:0px">
+            <td style="padding:20px;width:25%;max-width:25%">
+              <div style="position:relative; width:175px; aspect-ratio:4/3;">
+                <video autoplay muted loop playsinline preload="auto" style="width:100%; height:100%; border-radius:6px; display:block; position:absolute; top:0; left:0;">
+                  <source src="videos/vedbh1p0_rollout_envseed_44_skill_0_0_1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TODO: replace href below with the correct OpenReview/arXiv link for this paper -->
+              <!-- <a href="#"> -->
+                <papertitle>Dexterous Skill Discovery via Topology-Aware Wasserstein Dependency</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>James Heald</strong>, Kai Biegun, Alexandre Galashov, Maneesh Sahani
+              <br>
+              <em>Advances in Neural Information Processing Systems (NeurIPS) (Under Review)</em>, 2026
+              <!-- &nbsp <font color="red"><strong>(Spotlight) top 2.2% of submissions</strong></font> -->
+              <!-- <br>
+              <a href="https://joint-space-empowerment.github.io/">Project Page</a> /
+              <a href="https://openreview.net/pdf?id=qI2eHwfNfh">ICML Paper</a> /
+              <a href="https://dex-manipulation.github.io/rss2026/pdfs/22_Joint_Space_Empowerment_Dis.pdf">RSS Workshop Paper</a> /
+              <a href="https://github.com/gatsby-sahani/JoSE">Code</a> /
+              <a href="https://huggingface.co/jamesheald/joint-space-empowerment/">Model Weights</a> -->
+              <br>
+              <p></p>
+              <p>
+                We develop an unsupervised skill discovery method that learns dexterous skills
+                by optimizing a novel Wasserstein dependency measure between skills and object motions.
+                <!-- without extrinsic rewards, demonstrations or goals. -->
+                <!-- The key idea is a Wasserstein dependency measure between skills and object motion. -->
+                 <!-- that is formulated directly on the Lie algebra 𝔰𝔢(3), giving the agent the inductive bias to prioritize object interaction while  -->
+                By formulating object motions in the Lie algebra 𝔰𝔢(3), 
+                <!-- we introduce a Wasserstein dependency measure between skills and object motion that  -->
+                the learned skills respect the non-Euclidean topology of object configuration space,
+                enabling continuous object translation and rotation.</p>
+            </td>
+          </tr>
 
           <!-- <tr style="padding:0px"> -->
           <tr style="padding:0px" bgcolor="#ffffd0">
