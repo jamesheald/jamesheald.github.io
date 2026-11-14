@@ -1,381 +1,266 @@
 <!-- python3 -m http.server 8080 & sleep 1 && open http://localhost:8080/index.html -->
- <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>James Heald</title>
-  
   <meta name="author" content="James Heald">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>James Heald</name>
-              </p>
-              <p>
-                <!-- With the goal of replicating human dexterity,  -->
-                I develop algorithms for 
-                <!-- training dexterous (e.g. multi-fingered) hands to manipulate objects,  -->
-                 <!-- training multi-fingered hands to dexterously manipulate objects, -->
-                <!-- learning manipulation with dexterous (e.g. multi-fingered) hands, -->
-                learning dexterous manipulation 
-                in high-degree-of-freedom hands,
-                 <!-- with multi-fingered hands, -->
-                <!-- training agents with multi-fingered hands to dexterously manipulate objects, -->
-                combining reinforcement learning and probabilistic machine learning.
-                Most recently, this has led to an ICML 2026 Spotlight paper (top 2.2% of submissions), a NeurIPS 2026 paper, and a NeurIPS 2024 competition-winning method.
-                <!-- Most recently, this led to a NeurIPS 2024 competition-winning method  -->
-                <!-- that culminated in  -->
-                <!-- and -->
-                <!-- an ICML 2026 Spotlight paper (top 2.2% of submissions). -->
-                 <!-- Most recently, this led to an algorithm that won a NeurIPS 2024 competition and culminated in an ICML 2026 Spotlight paper (top 2.2% of submissions). -->
-                <!-- Most recently, this led to an ICML 2026 Spotlight paper (top 2.2% of submissions) -->
-                <!-- &mdash;work  -->
-                <!-- that builds on a NeurIPS 2024 Competition winning method. -->
-                <!-- first-place win in the NeurIPS 2024 MyoChallenge Competition. -->
-              </p>
-              <p>
-                I am a Research Fellow at the <a href="https://www.ucl.ac.uk/gatsby">Gatsby Unit, UCL</a> working with <a href="https://www.gatsby.ucl.ac.uk/~maneesh/">Maneesh Sahani</a>.
-                I previously worked as a postdoctoral researcher at the <a href="https://zuckermaninstitute.columbia.edu/">Zuckerman Institute, Columbia University</a> with <a href="https://wolpertlab.neuroscience.columbia.edu/people/daniel-wolpert">Daniel Wolpert</a>, where I published a first-author paper in <em>Nature</em>.
-              <!-- </p>
-              <p> -->
-                I received a PhD in Engineering from the University of Cambridge, where I trained in the <a href="http://learning.eng.cam.ac.uk/Public/">Computational and Biological Learning Lab</a>. Prior to my PhD, I worked as a medical doctor in the NHS, and before that, I received an MSc in Cognitive and Computational Neuroscience from The University of Sheffield and an MBChB in Medicine from The University of Manchester.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:jheald@gmail.com">Email</a> &nbsp/&nbsp
-                <!-- TODO: add a real CV file at cv.pdf, or remove this link -->
-                <a href="resume/resume.pdf">Resume</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=NvVK7oIAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/jamesheald">GitHub</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/james-heald-519b2916a/">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://twitter.com/HealdJbh40">Twitter</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:30%;max-width:40%">
-              <a href="images/james_heald_gatsby_circled.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/james_heald_gatsby_circled.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
+<div class="masthead">
+  <div class="masthead-inner">
+    <a class="site-title" href="#about">James Heald</a>
+    <nav class="tabs">
+      <a href="#about">About</a>
+      <a href="#open-source">Open Source</a>
+      <a href="#competitions">Competitions</a>
+      <a href="#publications">Publications</a>
+      <a href="#hobbies">Hobbies</a>
+    </nav>
+  </div>
+</div>
 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Open-Source Contributions</heading>
-			  <p>
-				I am an <a href="https://github.com/MyoHub/myosuite/graphs/contributors">active contributor</a> to <a href="https://github.com/MyoHub/myosuite">MyoSuite</a>, participating in biweekly development meetings. Working collaboratively and independently, I have:
-				<ul>
-					<li><a href="https://github.com/MyoHub/myosuite/tree/main/myosuite/envs/myo/backends/mjx">Ported environments</a> from MuJoCo to MuJoCo XLA, enabling massively parallel, GPU-accelerated simulations.</li>
-					<li>Built an <a href="https://github.com/MyoHub/myosuite/tree/main/myosuite/envs/myo/myoedits">API</a> to allow users to easily modify existing MuJoCo models for their own research needs.</li>
-          <li>Designed <a href="https://myosuite.readthedocs.io/en/latest/suite.html#arm-reach">new musculoskeletal models and tasks</a> to expand the toolkit available to the wider research community.</li>
-					<li>Created an <a href="https://sites.google.com/view/myochallenge-2024-advocacy/about-us">international advocacy website</a> to widen participation in the NeurIPS 2024 MyoChallenge competition.</li>
-				</ul>
-				I have also made contributions to <a href="https://github.com/araffin/sbx">SBX</a>, <a href="https://github.com/google/brax">BRAX</a> and <a href="https://github.com/google-deepmind/mujoco">MuJoCo XLA</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+<div class="page">
 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <p>
-                Outstanding research achievements are <span class="highlight">highlighted</span> below.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+  <!-- ============ Sidebar ============ -->
+  <aside class="sidebar">
+    <a href="images/james_heald_gatsby_circled.png" class="photo"><img alt="profile photo" src="images/james_heald_gatsby_circled.png"></a>
+    <h1>James Heald</h1>
+    <p class="tagline">Research Fellow at the Gatsby Unit, UCL</p>
+    <ul class="links-list">
+      <li><a href="mailto:jheald@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
+      <!-- TODO: add a real CV file at cv.pdf, or remove this link -->
+      <li><a href="resume/resume.pdf"><i class="fas fa-file-lines"></i>Resume</a></li>
+      <li><a href="https://scholar.google.com/citations?user=NvVK7oIAAAAJ&amp;hl=en&amp;oi=ao"><i class="fas fa-graduation-cap"></i>Google Scholar</a></li>
+      <li><a href="https://github.com/jamesheald"><i class="fab fa-github"></i>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/james-heald-519b2916a/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+      <li><a href="https://twitter.com/HealdJbh40"><i class="fab fa-twitter"></i>Twitter</a></li>
+    </ul>
+  </aside>
 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		<tr>
-		  <td style="padding:20px;width:100%;vertical-align:middle">
-		    <heading>Competitions</heading>
-		  </td>
-		</tr>
-		<tr style="background-color:#ffffd0;">
-		  <td style="padding:20px;width:100%;vertical-align:middle">
-	    <p>
-	    <!-- <a href="https://openreview.net/forum?id=1dSLbhErNv">
-      	      <papertitle>MyoChallenge 2024: A New Benchmark for Physiological Dexterity and Agility in Bionic Humans</papertitle>
-            </a>
-	    <br> -->
-    <papertitle>MyoChallenge 2024: A New Benchmark for Physiological Dexterity and Agility in Bionic Humans</papertitle>
-    <br>
-		<a href="https://neurips.cc/Conferences/2024/CompetitionTrack">
-      	      <papertitle>NeurIPS 2024 Competition Track Program</papertitle>
-        </a>
-		<br>
-	    <strong>James Heald</strong>, Kai Biegun, Samo Hromadka, Maneesh Sahani
-	    <br>
-      <font color="red"><strong>First Place ($2,000 prize)</strong></font>
-      <br>
-      <a href="https://openreview.net/pdf?id=1dSLbhErNv">Paper</a>
-      <br>
-            </p>
-            <p></p>
-            <p>Our team, Muscle Heads, came first place
-              <!-- &#x1F947; <font color="red"><strong>first place</strong></font> &#x1F947;  -->
-              in the Manipulation Track of the NeurIPS 2024 MyoChallenge competition, winning a $2,000 prize.
-               <!-- for advancing high-dimensional control in overactuated systems.  -->
-              The challenge involved coordinating a biologically-realistic human arm with 63 muscles and a robotic prosthetic arm with 17 DoFs to transfer objects between pillars. 
-              <!-- On each episode, object properties and pillar locations were randomized to further increase task difficulty.  -->
-              To control the musculoskeletal arm, I developed a novel algorithm to learn low-dimensional control manifolds in high-dimensional action spaces. This allowed us to efficiently acquire dexterous reaching and grasping skills. To control the robotic prosthetic arm, we combined a learned policy with inverse kinematic control, enabling smooth hand-offs and object relocation. Curriculum learning and reward shaping were used to solve the task in stages (reach, grasp, handover, move object to goal) .</p>
-            </td>
-          </tr>
+  <main>
 
- 	  <tr>
- 	    <td style="display: flex; padding: 20px;"> 
-   	    <div style="flex: 50%; text-align: center;"> 
- 	        <img src="images/myochallenge24.gif" alt="Descriptive Text for GIF" style="max-width: 100%;"> 
-    	     <p>Our winning solution, showcasing robustness to random pillar locations and object properties (weight, size and friction).</p>
-    	   </div>
-    	   <div style="margin-left: 10px; flex: 50%; text-align: center;"> 
-    	     <img src="images/myochallenge_24_leaderboard.png" alt="Descriptive Text for PNG" style="max-width: 100%;">
-    	     <p>Our solution ranked first on all metrics: score, time, effort and peak contact force.</p>
-    	   </div>
-   	  </td>
- 	  </tr>
+    <!-- ============ About ============ -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p class="lead">
+        I develop algorithms for learning dexterous manipulation in high-degree-of-freedom hands,
+        combining reinforcement learning and probabilistic machine learning.
+        Most recently, this has led to an ICML 2026 Spotlight paper (top 2.2% of submissions), a NeurIPS 2026 paper, and a NeurIPS 2024 competition-winning method.
+      </p>
+      <p>
+        I am a Research Fellow at the <a href="https://www.ucl.ac.uk/gatsby">Gatsby Unit, UCL</a> working with <a href="https://www.gatsby.ucl.ac.uk/~maneesh/">Maneesh Sahani</a>.
+        I previously worked as a postdoctoral researcher at the <a href="https://zuckermaninstitute.columbia.edu/">Zuckerman Institute, Columbia University</a> with <a href="https://wolpertlab.neuroscience.columbia.edu/people/daniel-wolpert">Daniel Wolpert</a>, where I published a first-author paper in <em>Nature</em>.
+        I received a PhD in Engineering from the University of Cambridge, where I trained in the <a href="http://learning.eng.cam.ac.uk/Public/">Computational and Biological Learning Lab</a>. Prior to my PhD, I worked as a medical doctor in the NHS, and before that, I received an MSc in Cognitive and Computational Neuroscience from The University of Sheffield and an MBChB in Medicine from The University of Manchester.
+      </p>
+    </section>
 
-        </tbody></table>
+    <!-- ============ Open source ============ -->
+    <section id="open-source">
+      <h2>Open-Source Contributions</h2>
+      <p>
+        I am an active contributor to <a href="https://github.com/MyoHub/myosuite">MyoSuite</a>, participating in biweekly development meetings. Working collaboratively and independently, I have:
+      </p>
+      <ul>
+        <li><a href="https://github.com/MyoHub/myosuite/tree/main/myosuite/envs/myo/backends/mjx">Ported environments</a> from MuJoCo to MuJoCo XLA, enabling massively parallel, GPU-accelerated simulations.</li>
+        <li>Built an <a href="https://github.com/MyoHub/myosuite/tree/main/myosuite/envs/myo/myoedits">API</a> to allow users to easily modify existing MuJoCo models for their own research needs.</li>
+        <li>Designed <a href="https://myosuite.readthedocs.io/en/latest/suite.html#arm-reach">new musculoskeletal models and tasks</a> to expand the toolkit available to the wider research community.</li>
+        <li>Created an <a href="https://sites.google.com/view/myochallenge-2024-advocacy/about-us">international advocacy website</a> to widen participation in the NeurIPS 2024 MyoChallenge competition.</li>
+      </ul>
+      <p>
+        I have also made contributions to <a href="https://github.com/araffin/sbx">SBX</a>, <a href="https://github.com/google/brax">BRAX</a> and <a href="https://github.com/google-deepmind/mujoco">MuJoCo XLA</a>.
+      </p>
+    </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Select publications</heading>
-            </td>
-          </tr>
-        </tbody></table>
+    <!-- ============ Competitions ============ -->
+    <section id="competitions">
+      <h2>Competitions</h2>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <article class="entry">
+        <div class="year">2024</div>
+        <div class="body">
+          <h3>MyoChallenge 2024: A New Benchmark for Physiological Dexterity and Agility in Bionic Humans</h3>
+          <p class="authors"><strong>James Heald</strong>, Kai Biegun, Samo Hromadka, Maneesh Sahani</p>
+          <p class="award award-a">First Place ($2,000 prize)</p>
+          <p class="links"><a href="https://neurips.cc/Conferences/2024/CompetitionTrack">Competition</a> <a href="https://openreview.net/pdf?id=1dSLbhErNv">Paper</a></p>
+          <p>Our team, Muscle Heads, came first place in the Manipulation Track of the NeurIPS 2024 MyoChallenge competition.
+            The challenge involved coordinating a biologically-realistic human arm with 63 muscles and a robotic prosthetic arm with 17 DoFs to transfer objects between pillars.
+            To control the musculoskeletal arm, I developed a novel algorithm to learn low-dimensional control manifolds in high-dimensional action spaces. This allowed us to efficiently acquire dexterous reaching and grasping skills. To control the robotic prosthetic arm, we combined a learned policy with inverse kinematic control, enabling smooth hand-offs and object relocation. Curriculum learning and reward shaping were used to solve the task in stages (reach, grasp, handover, move object to goal) .</p>
+          <div class="figures">
+            <figure>
+              <img src="images/myochallenge24.gif" alt="Descriptive Text for GIF">
+              <figcaption>Our winning solution, showcasing robustness to random pillar locations and object properties (weight, size and friction).</figcaption>
+            </figure>
+            <figure>
+              <img src="images/myochallenge_24_leaderboard.png" alt="Descriptive Text for PNG">
+              <figcaption>Our solution ranked first on all metrics: score, time, effort and peak contact force.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </section>
 
-          <!-- <tr style="padding:0px"> -->
-          <tr style="padding:0px">
-            <td style="padding:20px;width:25%;max-width:25%">
-              <div style="position:relative; width:175px; aspect-ratio:4/3;">
-                <video autoplay muted loop playsinline preload="auto" style="width:100%; height:100%; border-radius:6px; display:block; position:absolute; top:0; left:0;">
-                  <source src="videos/vedbh1p0_rollout_envseed_44_skill_0_0_1.mp4" type="video/mp4">
-                </video>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- TODO: replace href below with the correct OpenReview/arXiv link for this paper -->
-              <!-- <a href="#"> -->
-                <papertitle>Dexterous Skill Discovery via Topology-Aware Wasserstein Dependency</papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>James Heald*</strong>, Kai Biegun*, Alexandre Galashov, Maneesh Sahani
-              <br>
-              <em>Neural Information Processing Systems (NeurIPS)</em>, 2026
-              <br>
-              <a href="https://neurips.cc/virtual/2026/loc/sydney/poster/154902/">Poster Page</a> /
-              <a href="https://dexterous-skill-discovery.github.io">Project Page</a> / 
-              Preprint Available on Request
-              <br>
-              <!-- &nbsp <font color="red"><strong>(Spotlight) top 2.2% of submissions</strong></font> -->
-              <!-- <br>
-              <a href="https://joint-space-empowerment.github.io/">Project Page</a> /
-              <a href="https://openreview.net/pdf?id=qI2eHwfNfh">ICML Paper</a> /
-              <a href="https://dex-manipulation.github.io/rss2026/pdfs/22_Joint_Space_Empowerment_Dis.pdf">RSS Workshop Paper</a> /
-              <a href="https://github.com/gatsby-sahani/JoSE">Code</a> /
-              <a href="https://huggingface.co/jamesheald/joint-space-empowerment/">Model Weights</a> -->
-              <br>
-              <p></p>
-              <p>
-                We develop an unsupervised skill discovery method for learning dexterous skills
-                by optimizing a novel Wasserstein dependency measure between skills and object motions.
-                <!-- without extrinsic rewards, demonstrations or goals. -->
-                <!-- The key idea is a Wasserstein dependency measure between skills and object motion. -->
-                 <!-- that is formulated directly on the Lie algebra 𝔰𝔢(3), giving the agent the inductive bias to prioritize object interaction while  -->
-                By formulating object motions in the Lie algebra 𝔰𝔢(3), 
-                <!-- we introduce a Wasserstein dependency measure between skills and object motion that  -->
-                the learned skills respect the non-Euclidean topology of object configuration space,
-                enabling continuous object translation and rotation.</p>
-            </td>
-          </tr>
+    <!-- ============ Publications ============ -->
+    <section id="publications">
+      <h2>Select publications</h2>
 
-          <!-- <tr style="padding:0px"> -->
-          <tr style="padding:0px" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;max-width:25%">
-              <!-- <img style="width:100%;max-width:100%" alt="arn image" src="videos/CustomMyoChallengeBaodingP1-v1_JoSEPi_hero_seed0_top10pct.mp4"> -->
-              <div style="position:relative; width:175px; aspect-ratio:4/3;">
-                <video id="hero-video-0" autoplay muted playsinline preload="auto" style="width:100%; height:100%; border-radius:6px; display:block; position:absolute; top:0; left:0;">
-                  <source src="videos/CustomMyoChallengeBaodingP1-v1_JoSEPi_hero_seed0_top10pct.mp4" type="video/mp4">
-                </video>
-                <video id="hero-video-1" muted playsinline preload="auto" style="width:100%; height:100%; border-radius:6px; display:none; position:absolute; top:0; left:0;">
-                  <source src="videos/CustomAdroitPenTwirlRandom-v0_JoSEPi_hero_ep3-6-13-43-48.mp4" type="video/mp4">
-                </video>
-              </div>
-              <!-- <p style="font-size:small;text-align:center;">Learned dexterous manipulation policies: Baoding balls (MyoChallenge) and pen-twirling (Adroit hand).</p> -->
-              <script>
-                (function () {
-                  var heroVideoPlaylist = [
-                    { el: document.getElementById("hero-video-0"), maxTime: 3.0 },
-                    { el: document.getElementById("hero-video-1"), maxTime: null }
-                  ];
-                  var heroVideoIndex = 0;
-                  function advanceHeroVideo() {
-                    var current = heroVideoPlaylist[heroVideoIndex];
-                    var nextIndex = (heroVideoIndex + 1) % heroVideoPlaylist.length;
-                    var next = heroVideoPlaylist[nextIndex];
-                    current.el.pause();
-                    current.el.style.display = "none";
-                    next.el.style.display = "block";
-                    next.el.currentTime = 0;
-                    next.el.play();
-                    heroVideoIndex = nextIndex;
+      <article class="entry">
+        <div class="year">2026</div>
+        <div class="body">
+          <!-- TODO: replace href below with the correct OpenReview/arXiv link for this paper -->
+          <h3>Dexterous Skill Discovery via Topology-Aware Wasserstein Dependency</h3>
+          <p class="authors"><strong>James Heald*</strong>, Kai Biegun*, Alexandre Galashov, Maneesh Sahani</p>
+          <p class="venue"><em>Neural Information Processing Systems (NeurIPS)</em>, 2026</p>
+          <p class="links">
+            <a href="https://neurips.cc/virtual/2026/loc/sydney/poster/154902/">Poster Page</a>
+            <a href="https://dexterous-skill-discovery.github.io">Project Page</a>
+            <span>Preprint Available on Request</span>
+          </p>
+          <div class="media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="videos/vedbh1p0_rollout_envseed_44_skill_0_0_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>
+            We develop an unsupervised skill discovery method for learning dexterous skills
+            by optimizing a novel Wasserstein dependency measure between skills and object motions.
+            By formulating object motions in the Lie algebra 𝔰𝔢(3),
+            the learned skills respect the non-Euclidean topology of object configuration space,
+            enabling continuous object translation and rotation.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="year">2026</div>
+        <div class="body">
+          <!-- TODO: replace href below with the correct OpenReview/arXiv link for this paper -->
+          <h3>Joint-Space Empowerment for Dexterous Coordination in Tendon-Driven Hands</h3>
+          <p class="authors"><strong>James Heald</strong>, Vittorio Caggiano, Vikash Kumar, Maneesh Sahani</p>
+          <p class="venue"><em>International Conference on Machine Learning (ICML)</em>, 2026</p>
+          <p class="award award-b">Spotlight (Top 2.2% of Submissions)</p>
+          <p class="venue also">Also presented at
+            <a href="https://dex-manipulation.github.io/rss2026/">4th Workshop on Dexterous Manipulation: Scalable Learning for Human-Level Skills</a>, Robotics: Science and Systems (RSS) 2026</p>
+          <p class="links">
+            <a href="https://joint-space-empowerment.github.io/">Project Page</a>
+            <a href="https://openreview.net/pdf?id=qI2eHwfNfh">ICML Paper</a>
+            <a href="https://dex-manipulation.github.io/rss2026/pdfs/22_Joint_Space_Empowerment_Dis.pdf">RSS Workshop Paper</a>
+            <a href="https://github.com/gatsby-sahani/JoSE">Code</a>
+            <a href="https://huggingface.co/jamesheald/joint-space-empowerment/">Model Weights</a>
+          </p>
+          <div class="media">
+            <video id="hero-video-0" autoplay muted playsinline preload="auto">
+              <source src="videos/CustomMyoChallengeBaodingP1-v1_JoSEPi_hero_seed0_top10pct.mp4" type="video/mp4">
+            </video>
+            <video id="hero-video-1" muted playsinline preload="auto" style="display:none">
+              <source src="videos/CustomAdroitPenTwirlRandom-v0_JoSEPi_hero_ep3-6-13-43-48.mp4" type="video/mp4">
+            </video>
+          </div>
+          <script>
+            (function () {
+              var heroVideoPlaylist = [
+                { el: document.getElementById("hero-video-0"), maxTime: 3.0 },
+                { el: document.getElementById("hero-video-1"), maxTime: null }
+              ];
+              var heroVideoIndex = 0;
+              function advanceHeroVideo() {
+                var current = heroVideoPlaylist[heroVideoIndex];
+                var nextIndex = (heroVideoIndex + 1) % heroVideoPlaylist.length;
+                var next = heroVideoPlaylist[nextIndex];
+                current.el.pause();
+                current.el.style.display = "none";
+                next.el.style.display = "block";
+                next.el.currentTime = 0;
+                next.el.play();
+                heroVideoIndex = nextIndex;
+              }
+              heroVideoPlaylist.forEach(function (entry) {
+                entry.el.addEventListener("ended", advanceHeroVideo);
+                entry.el.addEventListener("timeupdate", function () {
+                  if (entry.maxTime !== null && entry.el.currentTime >= entry.maxTime && heroVideoPlaylist[heroVideoIndex].el === entry.el) {
+                    advanceHeroVideo();
                   }
-                  heroVideoPlaylist.forEach(function (entry) {
-                    entry.el.addEventListener("ended", advanceHeroVideo);
-                    entry.el.addEventListener("timeupdate", function () {
-                      if (entry.maxTime !== null && entry.el.currentTime >= entry.maxTime && heroVideoPlaylist[heroVideoIndex].el === entry.el) {
-                        advanceHeroVideo();
-                      }
-                    });
-                  });
-                })();
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- TODO: replace href below with the correct OpenReview/arXiv link for this paper -->
-              <!-- <a href="#"> -->
-                <papertitle>Joint-Space Empowerment for Dexterous Coordination in Tendon-Driven Hands</papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>James Heald</strong>, Vittorio Caggiano, Vikash Kumar, Maneesh Sahani
-              <br>
-              <em>International Conference on Machine Learning (ICML)</em>, 2026
-              <!-- &nbsp <font color="red"><strong>(Spotlight) top 2.2% of submissions</strong></font> -->
-              <br>
-              <font color="red"><strong>Spotlight (Top 2.2% of Submissions)</strong></font>
-              <br>
-              Also presented at
-              <a href="https://dex-manipulation.github.io/rss2026/">4th Workshop on Dexterous Manipulation: Scalable Learning for Human-Level Skills</a>, Robotics: Science and Systems (RSS) 2026
-              <br>
-              <a href="https://joint-space-empowerment.github.io/">Project Page</a> /
-              <a href="https://openreview.net/pdf?id=qI2eHwfNfh">ICML Paper</a> /
-              <a href="https://dex-manipulation.github.io/rss2026/pdfs/22_Joint_Space_Empowerment_Dis.pdf">RSS Workshop Paper</a> /
-              <a href="https://github.com/gatsby-sahani/JoSE">Code</a> /
-              <a href="https://huggingface.co/jamesheald/joint-space-empowerment/">Model Weights</a>
-              <br>
-              <p></p>
-              <p>
-                <!-- We develop an information-theoretic framework for discovering low-dimensional action manifolds to coordinate overactuated tendon-driven systems. -->
-                 We develop an information-theoretic framework for discovering low-dimensional action manifolds in tendon-driven systems.
-                  <!-- to coordinate actuators in tendon-driven systems -->
-                <!-- Overactuated tendon-driven systems, where many muscles or motorized cables drive each joint, are notoriously hard to control &mdash; but this redundancy also means effective behavior can be captured by a low-dimensional manifold of actions. -->
-                <!-- We introduce Joint-Space Empowerment (JoSE), an information-theoretic objective that discovers this manifold by quantifying how much control an agent has over its mechanical degrees of freedom. -->
-                Across both robotic and musculoskeletal hand models, policies trained on these manifolds achieve substantially greater dexterity, sample efficiency and generalization.</p>
-            </td>
-          </tr>
+                });
+              });
+            })();
+          </script>
+          <p>
+            We develop an information-theoretic framework for discovering low-dimensional action manifolds in tendon-driven systems.
+            Across both robotic and musculoskeletal hand models, policies trained on these manifolds achieve substantially greater dexterity, sample efficiency and generalization.</p>
+        </div>
+      </article>
 
-          <tr style="padding:0px">
-            <td style="padding:20px;width:25%;max-width:25%">
-              <div style="position:relative; width:175px; aspect-ratio:4/3;">
-                <video autoplay muted loop playsinline preload="auto" style="width:100%; height:100%; border-radius:6px; display:block; position:absolute; top:0; left:0;">
-                  <source src="videos/walker_latent8_clean.mp4" type="video/mp4">
-                </video>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Maximum-Likelihood Learning of Latent Dynamics Without Reconstruction</papertitle>
-              <br>
-              Samo Hromadka, Kai Biegun, Lior Fox, <strong>James Heald</strong>, Maneesh Sahani
-              <br>
-              <em>International Conference on Machine Learning (ICML)</em>, 2026
-              <br>
-              <a href="https://openreview.net/pdf?id=2CliXIoJNZ">ICML Paper</a> /
-              <a href="https://rpgssm.github.io/">Project Page</a> /
-              <a href="https://github.com/gatsby-sahani/rp-gssm/">Code</a>
-              <br>
-              <p></p>
-              <p>
-                We introduce the recognition-parametrized Gaussian state space model (RP-GSSM), which learns Markovian Gaussian latents via maximum likelihood without a decoder mapping latents back to observations.
-                This lets the RP-GSSM learn task-relevant latent dynamics from video without auxiliary losses, outperforming alternatives even in the presence of background distractors.</p>
-            </td>
-          </tr>
+      <article class="entry">
+        <div class="year">2026</div>
+        <div class="body">
+          <h3>Maximum-Likelihood Learning of Latent Dynamics Without Reconstruction</h3>
+          <p class="authors">Samo Hromadka, Kai Biegun, Lior Fox, <strong>James Heald</strong>, Maneesh Sahani</p>
+          <p class="venue"><em>International Conference on Machine Learning (ICML)</em>, 2026</p>
+          <p class="links">
+            <a href="https://openreview.net/pdf?id=2CliXIoJNZ">ICML Paper</a>
+            <a href="https://rpgssm.github.io/">Project Page</a>
+            <a href="https://github.com/gatsby-sahani/rp-gssm/">Code</a>
+          </p>
+          <div class="media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="videos/walker_latent8_clean.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>
+            We introduce the recognition-parametrized Gaussian state space model (RP-GSSM), which learns Markovian Gaussian latents via maximum likelihood without a decoder mapping latents back to observations.
+            This lets the RP-GSSM learn task-relevant latent dynamics from video without auxiliary losses, outperforming alternatives even in the presence of background distractors.</p>
+        </div>
+      </article>
 
-          <tr style="padding:0px">
-            <td style="padding:20px;width:25%;max-width:25%">
-              <img style="width:100%;max-width:100%" alt="tics image" src="images/TICS_cover.jpg">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(22)00265-0">
-                <papertitle>Contextual inference in learning and memory</papertitle>
-              </a>
-              <br>
-              <strong>James Heald</strong>, M&aacute;t&eacute; Lengyel&#42;, Daniel Wolpert&#42;
-              <br>
-              <em>Trends in Cognitive Sciences</em>, 2023 &nbsp 
-              <br>
-              <font color="red"><strong>Issue Cover and Feature Review</strong></font>
-              <br>
-              <a href="https://www.cell.com/action/showPdf?pii=S1364-6613%2822%2900265-0">Paper</a> /
-	      <a href="https://www.cell.com/trends/cognitive-sciences/issue?pii=S1364-6613(22)X0002-8">Issue Cover</a>
-              <p></p>
-              <p>We review a computational framework for repertoire learning that provides a unifying account of phenomena across numerous domains, including motor learning, economic decision making, episodic memory and conditioning.</p>
-            </td>
-          </tr>
+      <article class="entry">
+        <div class="year">2023</div>
+        <div class="body">
+          <h3>Contextual inference in learning and memory</h3>
+          <p class="authors"><strong>James Heald</strong>, M&aacute;t&eacute; Lengyel&#42;, Daniel Wolpert&#42;</p>
+          <p class="venue"><em>Trends in Cognitive Sciences</em>, 2023</p>
+          <p class="award award-c">Issue Cover and Feature Review</p>
+          <p class="links">
+            <a href="https://www.cell.com/action/showPdf?pii=S1364-6613%2822%2900265-0">Paper</a>
+            <a href="https://www.cell.com/trends/cognitive-sciences/issue?pii=S1364-6613(22)X0002-8">Issue Cover</a>
+          </p>
+          <div class="media"><img alt="tics image" src="images/TICS_cover.jpg"></div>
+          <p>We review a computational framework for repertoire learning that provides a unifying account of phenomena across numerous domains, including motor learning, economic decision making, episodic memory and conditioning.</p>
+        </div>
+      </article>
 
-          <tr style="padding:0px" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;max-width:25%">
-              <img style="width:100%;max-width:100%" alt="coin image" src="images/COIN_inference.png">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.nature.com/articles/s41586-021-04129-3">
-                <papertitle>Contextual inference underlies the learning of sensorimotor repertoires</papertitle>
-              </a>
-              <br>
-              <strong>James Heald</strong>, M&aacute;t&eacute; Lengyel&#42;, Daniel Wolpert&#42;
-              <br>
-              <em>Nature</em>, 2021 &nbsp
-              <br>
-              <font color="red"><strong>Accompanied by Nature News and Views</strong></font>
-              <br>
-              <a href="https://www.nature.com/articles/s41586-021-04129-3.epdf?sharing_token=N2D8PDVPHK-5fLrjIs7dV9RgN0jAjWel9jnR3ZoTv0PddheUPhFUzUPUOK281N2TMEkyP39U19_7kcc0STGSqiUa355VvD-Cv0k-Xe-g1Lj1Kpc8R3H-e-sUsBZ_IlxJiqdnODc64h-MPkevlGqpr2eA1Lvs1A9rW18uDnvbnCA%3D">Paper</a> /
-              <a href="https://github.com/jamesheald/COIN">Code</a> /
-              <a href="https://datadryad.org/stash/dataset/doi:10.5061/dryad.m63xsj42r">Data</a> /
-              <a href="https://www.nature.com/articles/d41586-021-03028-x">New and Views</a>
-              <p></p>
-              <p>We develop a theory of motor learning based on the principle of contextual inference. Our theory reveals that adaptation can arise by both creating and updating memories and changing how existing memories are differentially expressed.</p>
-              <p></p>
-            </td>
-          </tr>
+      <article class="entry">
+        <div class="year">2021</div>
+        <div class="body">
+          <h3>Contextual inference underlies the learning of sensorimotor repertoires</h3>
+          <p class="authors"><strong>James Heald</strong>, M&aacute;t&eacute; Lengyel&#42;, Daniel Wolpert&#42;</p>
+          <p class="venue"><em>Nature</em>, 2021</p>
+          <p class="award award-d">Accompanied by Nature News and Views</p>
+          <p class="links">
+            <a href="https://www.nature.com/articles/s41586-021-04129-3.epdf?sharing_token=N2D8PDVPHK-5fLrjIs7dV9RgN0jAjWel9jnR3ZoTv0PddheUPhFUzUPUOK281N2TMEkyP39U19_7kcc0STGSqiUa355VvD-Cv0k-Xe-g1Lj1Kpc8R3H-e-sUsBZ_IlxJiqdnODc64h-MPkevlGqpr2eA1Lvs1A9rW18uDnvbnCA%3D">Paper</a>
+            <a href="https://github.com/jamesheald/COIN">Code</a>
+            <a href="https://datadryad.org/stash/dataset/doi:10.5061/dryad.m63xsj42r">Data</a>
+            <a href="https://www.nature.com/articles/d41586-021-03028-x">New and Views</a>
+          </p>
+          <div class="media"><img alt="coin image" src="images/COIN_inference.png"></div>
+          <p>We develop a theory of motor learning based on the principle of contextual inference. Our theory reveals that adaptation can arise by both creating and updating memories and changing how existing memories are differentially expressed.</p>
+        </div>
+      </article>
+    </section>
 
-        </tbody></table>
+    <!-- ============ Hobbies ============ -->
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <p>
+        When I'm not developing control algorithms, I enjoy executing biological ones: I love to learn calisthenics skills and rock climb (deep-water soloing, bouldering).
+      </p>
+    </section>
 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Hobbies</heading>
-			  <p>
-				When I'm not developing control algorithms, I enjoy executing biological ones: I love to learn calisthenics skills and rock climb (deep-water soloing, bouldering).
-        <!-- up rocks (bouldering) and fall into water (deep water solo). -->
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+    </main>
+</div>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                <a href="https://jonbarron.info/">website template</a>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
 </body>
-
 </html>
